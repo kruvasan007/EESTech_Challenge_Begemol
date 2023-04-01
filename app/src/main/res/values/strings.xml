@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">EESTech_Challenge_Begemol</string>
+    <string name="page_title">Заголовок</string>
+    <string name="profile">Профиль</string>
+    <string name="title_day_plans">План на день</string>
+    <string name="task_title">Задания</string>
+    <string name="Save">Сохранить</string>
+    <string name="Change">Изменить</string>
+    <string name="name">Onboarding app</string>
+    <string name="button_task">Задания</string>
+    <string name="base">База знаний</string>
 </resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainScreen">
+
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.example.eestech_challenge_begemol.Screens.MainFragment"
+        android:label="Onboarding"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_mainScreen_to_taskScreen"
+            app:destination="@id/taskScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/taskScreen"
+        android:name="com.example.eestech_challenge_begemol.Screens.TaskFragment"
+        android:label="Задания"
+        tools:layout="@layout/tasks_fragment">
+        <argument
+            android:name="categoryId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_taskScreen_to_selectedTaskFragment"
+            app:destination="@id/selectedTaskFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectedTaskFragment"
+        android:name="com.example.eestech_challenge_begemol.Screens.SelectedTaskFragment"
+        android:label="Задание 1">
+        <argument
+            android:name="taskId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.eestech_challenge_begemol.Screens.ProfileFragment"
+        android:label="Профиль" />
+</navigation>
